@@ -31,7 +31,7 @@ double TransportCatalogue::GetDist(Stop* stop_a, Stop* stop_b) {
 		return static_cast<double>(dist_between_stops_[{stop_b, stop_a}]);
 	}
 	else {
-		return project::detail::ComputeDistance(stop_a->coordinates, stop_b->coordinates);
+		return 0.0;
 	}
 }
 
